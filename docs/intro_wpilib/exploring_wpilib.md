@@ -90,15 +90,15 @@ Here's an example of how you might use these methods to drive a robot with a joy
 
             // Check if A or B button is pressed print to the screen
             if (driveController.getAButton()) {
-                System.out.println("A button has been pressed.");
+                System.out.println("A button is currently pressed.");
             }
             if (driveController.getBButton()) {
-                System.out.println("B button has been pressed.");
+                System.out.println("B button is currently pressed.");
             }   
         }
     }
 
-In the `teleopPeriodic()` method, I added checks to see if the A or B button on the Xbox controller is pressed using `controller.getAButton()` and `controller.getBButton()`. When a button is pressed, a message prints to the console.
+In the `teleopPeriodic()` method, I added checks to see if the A or B button on the Xbox controller is pressed using `controller.getAButton()` and `controller.getBButton()`. Every periodic while button is pressed, a message prints to the console.
 
 ## Running a Build in WPILib VS Code
 WPILib offers a comprehensive set of tools for building and deploying code on FRC robots, with integration into Visual Studio Code. To run a build in WPILib VS Code, follow these steps:
